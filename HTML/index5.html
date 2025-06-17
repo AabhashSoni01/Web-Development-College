@@ -1,0 +1,64 @@
+<!--lecture 3-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border-color: black;
+        border-radius: 50%;
+        border-top: 10px dashed rgb(135, 10, 244);
+        animation: spin 1s infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <h2>HTML Formatting Tags</h2>
+
+    <p><b>This text is bold (b)</b></p>
+    <p><strong>This text is strong (strong - semantic bold)</strong></p>
+
+    <p><i>This text is italic (i)</i></p>
+    <p><em>This text is emphasized (em - semantic italic)</em></p>
+
+    <p><u>This text is underlined (u)</u></p>
+
+    <p><mark>This text is highlighted using mark</mark></p>
+
+    <p><small>This is smaller text (small)</small></p>
+
+    <p>This text contains <del>deleted</del> and <ins>inserted</ins> parts.</p>
+
+    <p>H<sub>2</sub>O uses subscript. E = mc<sup>2</sup> uses superscript.</p>
+
+    <p>This is <code>inline code</code> tag used for coding examples.</p>
+
+    <p>To save a file, press <kbd>Ctrl</kbd> + <kbd>S</kbd> (kbd tag).</p>
+
+    <p>
+      <abbr title="HyperText Markup Language">HTML</abbr> is an abbreviation.
+    </p>
+
+    <p><cite>Ramayana</cite> is an epic by Valmiki (cite tag).</p>
+
+    <p>He said, <q>This is an inline quotation.</q></p>
+
+    <blockquote cite="https://www.wikipedia.org">
+      This is a blockquote. It is used to define large quoted text.
+    </blockquote>
+  </body>
+</html>
