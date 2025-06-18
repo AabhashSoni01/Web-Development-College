@@ -1,0 +1,62 @@
+<!-- lecture4 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(rgb(186, 136, 218), rgb(38, 123, 208));
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #parent {
+        height: 400px;
+        width: 400px;
+        background: linear-gradient(rgb(119, 8, 188), rgb(27, 28, 29));
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 8px rgb(45, 45, 46);
+      }
+
+      #child {
+        height: 50%;
+        width: 50%;
+        background-color: rgb(62, 237, 202);
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgb(78, 76, 76);
+      }
+
+      #child:hover {
+        background-color: transparent;
+        border-top: 5px solid whitesmoke;
+        transition: 1s ease-in;
+        transform: scale(1.1);
+        animation: spin 2s infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          border-color: darkorange;
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child"></div>
+    </div>
+  </body>
+</html>
