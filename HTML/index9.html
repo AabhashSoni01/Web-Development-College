@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: o;
+        }
+
+        body {
+            background-color: rgb(185, 245, 247);
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 450px;
+            width: 40%;
+            background-color: coral;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        .box1 {
+            background: url(9019197_4059670.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 50%;
+            background-color: aquamarine;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .box2 {
+            height: 100%;
+            width: 50%;
+            background-color: antiquewhite;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 75%;
+            height: 30px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box2">
+                <h1>Login</h1>
+                <input type="text" placeholder="username" required>
+                <input type="text" placeholder="password" required>
+                <input type="text" placeholder="confirm password" required>
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
