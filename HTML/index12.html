@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Button</title>
+    <style>
+      .pulse-button {
+        padding: 25px 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        background-color: #130033;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+        animation: pulse 2s infinite;
+        transition: background 0.3s;
+      }
+
+      .pulse-button:hover {
+        background-color: #218838;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 15px rgba(40, 167, 69, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <center><button class="pulse-button">Click Me</button></center>
+  </body>
+</html>
