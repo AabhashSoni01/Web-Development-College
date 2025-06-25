@@ -1,0 +1,37 @@
+<!--3D Card with Hover Shadow and Transform -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Card Hover</title>
+    <style>
+      body {
+        background: #ebeaea;
+        font-family: sans-serif;
+      }
+
+      .card-3d {
+        width: 250px;
+        height: 160px;
+        background: rgb(255, 255, 255);
+        margin: 100px auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.4s, box-shadow 0.4s;
+        text-align: center;
+        line-height: 160px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .card-3d:hover {
+        transform: rotateY(10deg) rotateX(10deg);
+        box-shadow: 0 20px 40px rgba(199, 129, 249, 0.705);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-3d">3D Hover Card</div>
+  </body>
+</html>
