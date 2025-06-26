@@ -1,0 +1,36 @@
+<!-- Floating Card on Hover with Depth & Delay Animation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Card</title>
+    <style>
+      body {
+        background-color: rgb(206, 199, 253);
+      }
+      .float-card {
+        width: 300px;
+        height: 200px;
+        margin: 100px auto;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Arial";
+        font-size: 20px;
+        transition: transform 0.6s ease, box-shadow 0.6s ease;
+      }
+
+      .float-card:hover {
+        transform: translateY(-20px) scale(1.03);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="float-card">I'm Floating ✨</div>
+  </body>
+</html>
