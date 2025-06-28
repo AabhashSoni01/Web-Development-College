@@ -1,0 +1,44 @@
+<!-- Blinking Cursor Typing Animation (CSS-only) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Effect</title>
+    <style>
+      body {
+        background: #111;
+        color: #0f0;
+        font-family: monospace;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .typing {
+        border-right: 2px solid #0f0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typing 4s steps(20) 1s forwards, blink 0.7s infinite;
+      }
+
+      @keyframes typing {
+        to {
+          width: 23ch;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="typing">Loading your profile...</div>
+  </body>
+</html>
