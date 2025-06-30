@@ -1,0 +1,38 @@
+<!-- Animated Image Gallery Hover Zoom -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Hover Zoom</title>
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .gallery img {
+        width: 250px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.4s ease, box-shadow 0.4s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="https://picsum.photos/id/1015/400/300" alt="Image 1" />
+      <img src="https://picsum.photos/id/1016/400/300" alt="Image 2" />
+      <img src="https://picsum.photos/id/1019/400/300" alt="Image 3" />
+    </div>
+  </body>
+</html>
