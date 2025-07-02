@@ -1,0 +1,72 @@
+<!-- CSS-Only Animated Dropdown Menu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Dropdown</title>
+    <style>
+      body {
+        background: #111;
+        color: #fff;
+        font-family: sans-serif;
+        padding: 50px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown label {
+        background: #3498db;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .dropdown input {
+        display: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 160%;
+        left: 0;
+        background: #222;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .dropdown-content a {
+        display: block;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+      }
+
+      .dropdown-content a:hover {
+        background: #444;
+      }
+
+      .dropdown input:checked ~ .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <label for="toggle">Menu ▼</label>
+      <input type="checkbox" id="toggle" />
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>
