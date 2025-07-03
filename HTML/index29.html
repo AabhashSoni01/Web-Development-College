@@ -1,0 +1,40 @@
+<!-- Responsive CSS Grid Layout (No JS) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #eee;
+        padding: 20px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .grid-item {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item">🌐 HTML</div>
+      <div class="grid-item">🎨 CSS</div>
+      <div class="grid-item">⚙️ UI/UX</div>
+      <div class="grid-item">📱 Responsive</div>
+    </div>
+  </body>
+</html>
