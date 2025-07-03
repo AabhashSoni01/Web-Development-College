@@ -1,0 +1,84 @@
+<!-- Pure CSS Tabs UI -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tabs</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: linear-gradient(to right, #fad2d2, #8eb8fd);
+        padding: 50px;
+      }
+
+      .tabs {
+        width: 400px;
+        margin: auto;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      label {
+        padding: 10px 20px;
+        background: #8a8a8a;
+        cursor: pointer;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+
+      .tab-content {
+        border: 1px solid #ccc;
+        background: white;
+        padding: 20px;
+        border-radius: 0 5px 5px 0;
+        display: none;
+      }
+
+      #tab1:checked ~ .content #content1,
+      #tab2:checked ~ .content #content2,
+      #tab3:checked ~ .content #content3 {
+        display: block;
+      }
+
+      #tab1:checked + label,
+      #tab2:checked + label,
+      #tab3:checked + label {
+        background: #fff;
+        border-bottom: none;
+      }
+
+      .tab-labels {
+        display: flex;
+      }
+
+      .content {
+        border-top: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <input type="radio" name="tabs" id="tab1" checked />
+      <label for="tab1">Home</label>
+
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2">Profile</label>
+
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3">Settings</label>
+
+      <div class="content">
+        <div id="content1" class="tab-content">🏠 Welcome to the Home tab!</div>
+        <div id="content2" class="tab-content">
+          👤 This is your Profile tab.
+        </div>
+        <div id="content3" class="tab-content">
+          ⚙️ Adjust your Settings here.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
