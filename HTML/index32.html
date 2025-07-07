@@ -1,0 +1,66 @@
+<!-- Accordion Menu (Pure CSS) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Accordion</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #fafafa;
+        padding: 40px;
+      }
+
+      .accordion {
+        width: 400px;
+        margin: auto;
+      }
+
+      .accordion input {
+        display: none;
+      }
+
+      .accordion label {
+        display: block;
+        background: #2980b9;
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+
+      .accordion .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        background: white;
+        padding: 0 15px;
+        border-radius: 5px;
+        color: #333;
+      }
+
+      .accordion input:checked ~ .content {
+        max-height: 150px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <input type="checkbox" id="section1" />
+      <label for="section1">What is HTML?</label>
+      <div class="content">
+        HTML stands for HyperText Markup Language and is used to structure web
+        pages.
+      </div>
+
+      <input type="checkbox" id="section2" />
+      <label for="section2">What is CSS?</label>
+      <div class="content">
+        CSS styles the HTML content, making it visually appealing.
+      </div>
+    </div>
+  </body>
+</html>
