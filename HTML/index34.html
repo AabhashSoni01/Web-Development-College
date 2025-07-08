@@ -1,0 +1,39 @@
+<!-- Animated Gradient Background (Pure CSS) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Background</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(-45deg, #53308a, #cc99fb, #d9adfe, #fbc2eb);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: rgb(53, 52, 52); text-align: center; margin-top: 20%">
+      Animated Gradient Background
+    </h1>
+    <p style="color: rgb(54, 54, 54); text-align: center">
+      This is a simple example of an animated gradient background using pure
+      CSS.
+    </p>
+  </body>
+</html>
