@@ -1,0 +1,78 @@
+<!-- Responsive Pricing Cards (CSS Grid) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Cards</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #f1f1f1;
+        padding: 50px;
+      }
+
+      .pricing-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: #2980b9;
+      }
+
+      .card .price {
+        font-size: 28px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .card button {
+        background: #2980b9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .card button:hover {
+        background: #1c5985;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-container">
+      <div class="card">
+        <h3>Basic</h3>
+        <p class="price">$9/mo</p>
+        <p>✔ 1 User<br />✔ 10GB Storage<br />✔ Email Support</p>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p class="price">$29/mo</p>
+        <p>✔ 10 Users<br />✔ 100GB Storage<br />✔ Priority Support</p>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p class="price">$99/mo</p>
+        <p>✔ Unlimited Users<br />✔ 1TB Storage<br />✔ 24/7 Support</p>
+        <button>Select</button>
+      </div>
+    </div>
+  </body>
+</html>
