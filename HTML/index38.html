@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Toggle</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f1f1f1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Hidden checkbox */
+    #toggle {
+      display: none;
+    }
+
+    /* Toggle switch styling */
+    .switch {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 34px;
+      margin-bottom: 10px;
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ccc;
+      border-radius: 34px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .slider::before {
+      content: "";
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    /* Use input:checked + label .slider to style switch */
+    #toggle:checked + label .slider {
+      background-color: #2ecc71;
+    }
+
+    #toggle:checked + label .slider::before {
+      transform: translateX(46px);
+    }
+
+    .cards {
+      margin-top: 30px;
+    }
+
+    .price-card {
+      display: none;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 10px auto;
+      width: 250px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show based on toggle */
+    #toggle:not(:checked) ~ .cards .monthly {
+      display: inline-block;
+    }
+
+    #toggle:checked ~ .cards .yearly {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Pricing Plan</h2>
+
+  <!-- ✅ Checkbox outside, connected by for="toggle" -->
+  <input type="checkbox" id="toggle" />
+  <label class="switch" for="toggle">
+    <span class="slider"></span>
+  </label>
+  <br />
+  <span>Monthly / Yearly</span>
+
+  <div class="cards">
+    <div class="price-card monthly">
+      <h3>Basic Plan</h3>
+      <p>$9/mo</p>
+    </div>
+    <div class="price-card yearly">
+      <h3>Basic Plan</h3>
+      <p>$90/yr</p>
+    </div>
+  </div>
+</body>
+</html>
