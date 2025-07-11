@@ -1,0 +1,66 @@
+<!-- Timeline / Vertical Stepper UI (CSS-only) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline UI</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #ecf0f1;
+        padding: 40px;
+      }
+
+      .timeline {
+        border-left: 4px solid #3498db;
+        margin-left: 20px;
+        padding-left: 20px;
+      }
+
+      .step {
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .step::before {
+        content: "";
+        position: absolute;
+        left: -32px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background: #3498db;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+
+      .step h4 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .step p {
+        margin: 5px 0 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Project Timeline</h2>
+    <div class="timeline">
+      <div class="step">
+        <h4>Step 1: Research</h4>
+        <p>Gathering user data & market analysis.</p>
+      </div>
+      <div class="step">
+        <h4>Step 2: Wireframing</h4>
+        <p>Create low-fidelity wireframes and prototypes.</p>
+      </div>
+      <div class="step">
+        <h4>Step 3: Development</h4>
+        <p>Build responsive frontend and backend.</p>
+      </div>
+    </div>
+  </body>
+</html>
