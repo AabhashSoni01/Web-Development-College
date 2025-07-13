@@ -1,0 +1,53 @@
+<!-- CSS Skeleton Loader (Preloader UI) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skeleton Loader</title>
+    <style>
+      body {
+        padding: 40px;
+        font-family: sans-serif;
+      }
+
+      .skeleton {
+        background: linear-gradient(
+          90deg,
+          #eee0e0 25%,
+          #f9bebe 50%,
+          #fdd4d4 75%
+        );
+        background-size: 400% 100%;
+        animation: shimmer 1.2s infinite;
+        border-radius: 6px;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        width: 60%;
+        height: 20px;
+      }
+
+      .line {
+        width: 90%;
+        height: 12px;
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -400px 0;
+        }
+        100% {
+          background-position: 500px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="skeleton title"></div>
+    <div class="skeleton line"></div>
+    <div class="skeleton line" style="width: 80%"></div>
+    <div class="skeleton line" style="width: 70%"></div>
+  </body>
+</html>
