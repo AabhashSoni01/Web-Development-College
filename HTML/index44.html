@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: linear-gradient(to bottom, #ffd88f, #b1f5e5, #42e0fc);
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .road {
+        height: 150px;
+        width: 100%;
+        background-color: #201f1f;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .line {
+        height: 10px;
+        width: 48px;
+        background-color: #fff;
+        position: relative;
+        top: 50%;
+        animation: lines 1s linear 0s infinite;
+      }
+
+      @keyframes lines {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(-230px);
+        }
+      }
+
+      .car {
+        height: 80px;
+        width: 170px;
+        background-color: #046aa9;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 30px;
+        margin-left: 20px;
+        z-index: 1;
+        animation: forward 8s 1s infinite linear;
+      }
+
+      @keyframes forward {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(1500px);
+        }
+      }
+
+      .wheels {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 58px;
+        margin-left: 5px;
+      }
+
+      .left {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #ffd88f, #b1f5e5, #42e0fc);
+        animation: spin 0.5s 0s infinite;
+        border: 3px solid black;
+      }
+
+      .right {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #ffd88f, #b1f5e5, #42e0fc);
+        animation: spin 0.5s 0s infinite;
+        border: 3px solid black;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="road">
+      <div class="car">
+        <div class="wheels">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </body>
+</html>
