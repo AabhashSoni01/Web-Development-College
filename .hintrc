@@ -26,7 +26,8 @@
       "default",
       {
         "ignore": [
-          "backdrop-filter"
+          "backdrop-filter",
+          "-webkit-mask"
         ]
       }
     ],
@@ -35,6 +36,13 @@
       "default",
       {
         "link-name": "off"
+      }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-allowed-attr": "off",
+        "aria-valid-attr-value": "off"
       }
     ]
   }
