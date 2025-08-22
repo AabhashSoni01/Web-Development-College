@@ -6,19 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        margin: 20px;
+        padding: 0;
+      }
+
       .navbar {
-        display: grid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 60px;
-        width: 100%;
+        padding: 0 24px;
         background-color: #000000;
+      }
+
+      .site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      p {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #f26a3e;
+        font-weight: 900;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .menu-item {
+        color: #fff;
+        padding: 0 15px;
+        font-size: 1.3rem;
+        text-decoration: none;
+      }
+
+      .btn {
+        color: #fff;
+        padding: 5px 15px;
+        background-color: #f26a3e;
+        font-size: 1.3rem;
+        border-radius: 5px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 720px) {
+        .navbar {
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+          padding: 0;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .site {
+          flex-direction: column;
+          width: 100%;
+          border-bottom: 1px solid gray;
+          padding: 8px 0;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .menu {
+          flex-direction: column;
+          text-align: center;
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .menu-item {
+          border-bottom: 1px solid gray;
+          padding: 8px 0px;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .btn {
+          width: 50%;
+          padding: 8px 0px;
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="navbar">
-      <div class="site"></div>
-      <div class="menu"></div>
-      <div class="btn"></div>
+      <div class="site"><p>Coding Thinkers</p></div>
+      <div class="menu">
+        <span class="menu-item">Home</span>
+        <span class="menu-item">About</span>
+        <span class="menu-item">Support</span>
+        <span class="menu-item">Contact</span>
+      </div>
+      <div class="btn">Login</div>
     </div>
   </body>
 </html>
