@@ -1,0 +1,42 @@
+<!-- using tailwind css -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body
+    class="flex flex-col justify-center items-center h-screen camelcase rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"
+  >
+    <div
+      class="flex justify-between p-3 bg-gray-800 h-10 w-screen absolute inset-x-0 top-0 h-13"
+    >
+      <span class="text-white text-2xl font-bold">LOGO</span>
+      <div class="flex justify-between space-x-4 cursor-pointer">
+        <span class="text-white hover:text-blue-600">Home</span>
+        <span class="text-white hover:text-blue-600">About</span>
+        <span class="text-white hover:text-blue-600">Contact</span>
+        <span class="text-white hover:text-blue-600">Services</span>
+      </div>
+    </div>
+    <div
+      class="h-93 w-80 rounded-2xl shadow-xl transition delay-300 duration-300 ease-in-out hover:scale-120"
+    >
+      <div
+        class="h-50 rounded-t-xl bg-[url('https://plus.unsplash.com/premium_photo-1734543932092-5e087f69c727?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover bg-no-repeat"
+      ></div>
+      <div class="font-bold mx-4 my-4 font-sans">Beautiful Nature</div>
+      <div class="text-sm mx-4 my-4 font-sans">
+        Discover the beauty of untouched nature. Fresh air, clean water and
+        piece of mind etc.
+      </div>
+      <div
+        class="bg-blue-700 h-10 mx-6 rounded-xl flex justify-center items-center text-white"
+      >
+        Explore More
+      </div>
+    </div>
+  </body>
+</html>
