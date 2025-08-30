@@ -5,24 +5,29 @@
 
 body {
   min-height: 100vh;
-  background: rgb(218, 246, 250);
+  background: rgb(204, 247, 252);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container {
+    display: flex;
+    background-color: #d1edfb;
+}
+
 .login-box {
-  height: 220px;
-  width: 200px;
+  height: 280px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4),
-    -5px -5px 15px rgba(255, 255, 255, 0.6);
+  box-shadow: 5px 5px 12px rgba(97, 97, 97, 0.4),
+    -8px -8px 15px rgba(192, 229, 255, 0.9);
 }
 
 form {
@@ -30,10 +35,32 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+}
+
+.textbox {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(137, 214, 253);
+  background-color: transparent;
+  box-shadow: 2px 2px 12px rgba(96, 151, 209, 0.441),
+    -3px -3px 10px rgb(26, 163, 163, 0.2);
+  padding-left: 15px;
 }
 
 button {
   position: relative;
-  top: 10px;
+  height: 30px;
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3),
+    -3px -3px 12px rgba(192, 229, 255, 0.9);
+    cursor: pointer;
 }
