@@ -78,3 +78,33 @@
 //     });
 //   });
 // });
+
+/* september - 9 " DOM " */
+
+// let h5 = document.getElementsByClassName("five");
+// h5[0].style.color = 'blue'
+
+// let h1 = document.getElementById("one");
+// h1.style.color = 'blue'
+
+// let h2 = document.getElementById("two");
+// h2.style.color = 'purple'
+
+// ...existing code...
+
+// const images = [
+//   "https://images.unsplash.com/photo-1756752358819-23f00a84ee7b?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   "https://plus.unsplash.com/premium_photo-1757260019168-606a272c7d9c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   "https://images.unsplash.com/photo-1757262997522-c1a8683702a0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   "https://images.unsplash.com/photo-1532771098148-525cefe10c23?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//   // Add your image file names or URLs here
+// ];
+// let current = 0;
+// const imgElement = document.getElementById("slideshow");
+// function showNextImage() {
+//   imgElement.src = images[current];
+//   current = (current + 1) % images.length;
+// }
+// showNextImage();
+// setInterval(showNextImage, 2000);
