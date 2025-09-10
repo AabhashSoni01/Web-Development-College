@@ -108,3 +108,32 @@
 // }
 // showNextImage();
 // setInterval(showNextImage, 2000);
+
+/* september - 10 */
+
+// let btn = document.querySelector("button");
+// let bd = document.querySelector("body");
+// btn.addEventListener("click", function xyz() {
+//   bd.style.background = "linear-gradient(135deg, #60d7ecff, #22479eff)";
+// });
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("input", (e) => {
+//     console.log(e.target.value);
+//     document.querySelector("h2").innerText = e.target.value;
+// });
+
+// let forM = document.querySelector("form");
+// forM.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let data = {
+//     name: forM[0].value,
+//     email: forM[1].value,
+//     pass: forM[2].value,
+//   };
+//   console.log(data);
+//   localStorage.setItem("user", JSON.stringify(data));
+//   //   console.log(forM[0].value);
+//   //   console.log(forM[1].value);
+// //   console.log(forM[2].value);
+// });
