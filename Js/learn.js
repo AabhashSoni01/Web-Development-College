@@ -123,17 +123,41 @@
 //     document.querySelector("h2").innerText = e.target.value;
 // });
 
-// let forM = document.querySelector("form");
-// forM.addEventListener("submit", (e) => {
+/* september - 11 */
+
+// let forM1 = document.querySelector("#forM1");
+// forM1.addEventListener("submit", (e) => {
 //   e.preventDefault();
 //   let data = {
-//     name: forM[0].value,
-//     email: forM[1].value,
-//     pass: forM[2].value,
+//     name: forM1[0].value,
+//     email: forM1[1].value,
+//     pass: forM1[2].value,
 //   };
 //   console.log(data);
 //   localStorage.setItem("user", JSON.stringify(data));
-//   //   console.log(forM[0].value);
-//   //   console.log(forM[1].value);
-// //   console.log(forM[2].value);
+// });
+// let forM2 = document.querySelector("#forM2");
+// forM2.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let storeUser = JSON.parse(localStorage.getItem("user"));
+//   let email = forM2[0].value;
+//   let pass = forM2[1].value;
+//   if (email === storeUser.email && pass === storeUser.pass) {
+//     alert("login successful");
+//   } else {
+//     alert("login failed");
+//   }
+// });
+
+// let inp = document.querySelector("input");
+// let btn = document.querySelector("button");
+// let Li = document.querySelector("ul");
+// btn.addEventListener("click", () => {
+//   let li = document.createElement("li");
+//   li.innerText = inp.value;
+//   Li.append(li);
+//   inp.value = "";
+//   li.addEventListener("click", () => {
+//     li.remove();
+//   })
 // });
