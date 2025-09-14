@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e272e;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.container:hover > :not(:hover) {
+  opacity: 0.3;
+}
+
+.card {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+  -webkit-box-reflect: below 3px
+    linear-gradient(transparent, transparent, rgba(3, 3, 3, 0.2));
+  border: 3px ridge #a5b1c2;
+  margin: 8px;
+}

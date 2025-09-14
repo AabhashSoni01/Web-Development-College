@@ -27,7 +27,8 @@
       {
         "ignore": [
           "backdrop-filter",
-          "-webkit-mask"
+          "-webkit-mask",
+          "-webkit-box-reflect"
         ]
       }
     ],
