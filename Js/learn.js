@@ -161,3 +161,34 @@
 //     li.remove();
 //   })
 // });
+
+
+
+/* september - 19 */
+
+// Example: Simulating a task with Promise
+function fetchData(success) {
+  return new Promise((resolve, reject) => {
+    console.log("Fetching data...");
+
+    setTimeout(() => {
+      if (success) {
+        resolve("Data fetched successfully!");
+      } else {
+        reject("Error: Failed to fetch data.");
+      }
+    }, 2000); // simulating 2 second delay
+  });
+}
+
+// Using the Promise
+fetchData(true) // change to false to test reject
+  .then((result) => {
+    console.log("✅ Success:", result);
+  })
+  .catch((error) => {
+    console.error("❌ Failure:", error);
+  })
+  .finally(() => {
+    console.log("Task finished.");
+  });
