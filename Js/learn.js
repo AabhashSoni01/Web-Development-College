@@ -162,33 +162,36 @@
 //   })
 // });
 
-
-
 /* september - 19 */
 
 // Example: Simulating a task with Promise
-function fetchData(success) {
-  return new Promise((resolve, reject) => {
-    console.log("Fetching data...");
+// function fetchData(success) {
+//   return new Promise((resolve, reject) => {
+//     console.log("Fetching data...");
 
-    setTimeout(() => {
-      if (success) {
-        resolve("Data fetched successfully!");
-      } else {
-        reject("Error: Failed to fetch data.");
-      }
-    }, 2000); // simulating 2 second delay
-  });
-}
+//     setTimeout(() => {
+//       if (success) {
+//         resolve("Data fetched successfully!");
+//       } else {
+//         reject("Error: Failed to fetch data.");
+//       }
+//     }, 2000); // simulating 2 second delay
+//   });
+// }
 
-// Using the Promise
-fetchData(true) // change to false to test reject
-  .then((result) => {
-    console.log("✅ Success:", result);
-  })
-  .catch((error) => {
-    console.error("❌ Failure:", error);
-  })
-  .finally(() => {
-    console.log("Task finished.");
-  });
+// // Using the Promise
+// fetchData(true) // change to false to test reject
+//   .then((result) => {
+//     console.log("✅ Success:", result);
+//   })
+//   .catch((error) => {
+//     console.error("❌ Failure:", error);
+//   })
+//   .finally(() => {
+//     console.log("Task finished.");
+//   });
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// arr.splice(2, 2, 10, 11, 12); // starting index, number of elements to delete, elements to add
+// console.log(arr);
+// arr.splice(4); // this will acts as slice which deletes elements from the starting index to the end
