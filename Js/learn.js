@@ -195,3 +195,6 @@
 // arr.splice(2, 2, 10, 11, 12); // starting index, number of elements to delete, elements to add
 // console.log(arr);
 // arr.splice(4); // this will acts as slice which deletes elements from the starting index to the end
+
+// const readlineSync = require("readline-sync");
+// readlineSync.question("who are you ?")
