@@ -201,34 +201,48 @@
 
 /* Promise chaining */
 
-function step1() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve("Step 1 done ✅"), 1000);
-  });
-}
+// function step1() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve("Step 1 done ✅"), 1000);
+//   });
+// }
 
-function step2() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve("Step 2 done ✅"), 1000);
-  });
-}
+// function step2() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve("Step 2 done ✅"), 1000);
+//   });
+// }
 
-function step3() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve("Step 3 done ✅"), 1000);
-  });
-}
+// function step3() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve("Step 3 done ✅"), 1000);
+//   });
+// }
 
-step1()
-  .then((msg) => {
-    console.log(msg);
-    return step2();
-  })
-  .then((msg) => {
-    console.log(msg);
-    return step3();
-  })
-  .then((msg) => {
-    console.log(msg);
-  })
-  .finally(() => console.log("All steps completed 🎉"));
+// step1()
+//   .then((msg) => {
+//     console.log(msg);
+//     return step2();
+//   })
+//   .then((msg) => {
+//     console.log(msg);
+//     return step3();
+//   })
+//   .then((msg) => {
+//     console.log(msg);
+//   })
+//   .finally(() => console.log("All steps completed 🎉"));
+
+/* Run multiple tasks in parallel */
+
+// const p1 = new Promise((resolve) => setTimeout(() => resolve("Result 1"), 1000));
+// const p2 = new Promise((resolve) => setTimeout(() => resolve("Result 2"), 2000));
+// const p3 = new Promise((resolve) => setTimeout(() => resolve("Result 3"), 1500));
+
+// Promise.all([p1, p2, p3])
+//   .then((results) => {
+//     console.log("✅ All done:", results);
+//   })
+//   .catch((err) => {
+//     console.error("❌ One failed:", err);
+//   });
