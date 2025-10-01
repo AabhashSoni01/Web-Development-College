@@ -246,3 +246,13 @@
 //   .catch((err) => {
 //     console.error("❌ One failed:", err);
 //   });
+
+/* Promise.race() → First one wins */
+
+// const fast = new Promise((resolve) => setTimeout(() => resolve("Fast one 🏃"), 1000));
+// const slow = new Promise((resolve) => setTimeout(() => resolve("Slow one 🐢"), 3000));
+
+// Promise.race([fast, slow])
+//   .then((winner) => {
+//     console.log("Winner is:", winner);
+//   });
