@@ -256,3 +256,29 @@
 //   .then((winner) => {
 //     console.log("Winner is:", winner);
 //   });
+
+/* Using async/await */
+
+// function fetchData(id) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(`Fetched data for ID: ${id}`), 1500);
+//   });
+// }
+
+// async function run() {
+//   console.log("Start fetching...");
+
+//   try {
+//     const data1 = await fetchData(101);
+//     console.log(data1);
+
+//     const data2 = await fetchData(202);
+//     console.log(data2);
+//   } catch (err) {
+//     console.error("Error:", err);
+//   } finally {
+//     console.log("Fetching complete ✅");
+//   }
+// }
+
+// run();
