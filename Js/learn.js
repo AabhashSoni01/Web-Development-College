@@ -282,3 +282,20 @@
 // }
 
 // run();
+
+/* Button Click with Promise */
+
+// function getData() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("✅ Data loaded from server!");
+//     }, 2000);
+//   });
+// }
+
+// document.getElementById("loadBtn").addEventListener("click", () => {
+//   document.getElementById("result").textContent = "⏳ Loading...";
+//   getData().then((msg) => {
+//     document.getElementById("result").textContent = msg;
+//   });
+// });
