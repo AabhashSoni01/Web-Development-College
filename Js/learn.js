@@ -299,3 +299,22 @@
 //     document.getElementById("result").textContent = msg;
 //   });
 // });
+
+/* Changing Colors with Promise Chain */
+
+// function changeColor(element, color, delay) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       element.style.color = color;
+//       resolve();
+//     }, delay);
+//   });
+// }
+
+// const text = document.getElementById("text");
+
+// changeColor(text, "red", 1000)
+//   .then(() => changeColor(text, "green", 1000))
+//   .then(() => changeColor(text, "blue", 1000))
+//   .then(() => changeColor(text, "purple", 1000))
+//   .then(() => console.log("✅ Done changing colors!"));
