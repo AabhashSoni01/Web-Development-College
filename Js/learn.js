@@ -318,3 +318,21 @@
 //   .then(() => changeColor(text, "blue", 1000))
 //   .then(() => changeColor(text, "purple", 1000))
 //   .then(() => console.log("✅ Done changing colors!"));
+
+/* Fetch API + DOM (Real World) */
+
+// document.getElementById("fetchBtn").addEventListener("click", () => {
+//   document.getElementById("user").textContent = "⏳ Fetching...";
+
+//   fetch("https://jsonplaceholder.typicode.com/users/1") // fake API
+//     .then((res) => res.json())
+//     .then((data) => {
+//       document.getElementById(
+//         "user"
+//       ).innerHTML = `<h3>${data.name}</h3><p>${data.email}</p>`;
+//     })
+//     .catch((err) => {
+//       document.getElementById("user").textContent = "❌ Error fetching user";
+//       console.error(err);
+//     });
+// });
