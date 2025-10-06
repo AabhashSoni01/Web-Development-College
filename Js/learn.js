@@ -336,3 +336,25 @@
 //       console.error(err);
 //     });
 // });
+
+/* Loading Spinner while Fetching Data - Shows async/await + DOM updates dynamically */
+
+// const loadBtn = document.getElementById("loadBtn");
+// const postsDiv = document.getElementById("posts");
+
+// loadBtn.addEventListener("click", async () => {
+//   postsDiv.innerHTML = "<p>⏳ Loading posts...</p>";
+
+//   try {
+//     const res = await fetch(
+//       "https://jsonplaceholder.typicode.com/posts?_limit=3"
+//     );
+//     const data = await res.json();
+
+//     postsDiv.innerHTML = data
+//       .map((post) => `<h3>${post.title}</h3><p>${post.body}</p>`)
+//       .join("");
+//   } catch (err) {
+//     postsDiv.innerHTML = "<p style='color:red'>❌ Failed to load data</p>";
+//   }
+// });
