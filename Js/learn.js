@@ -358,3 +358,27 @@
 //     postsDiv.innerHTML = "<p style='color:red'>❌ Failed to load data</p>";
 //   }
 // });
+
+/* Image Loader Using Promises - Shows how to wrap DOM events (like img.onload) inside a Promise */
+
+// function loadImage(url) {
+//   return new Promise((resolve, reject) => {
+//     const img = new Image();
+//     img.src = url;
+//     img.onload = () => resolve(img);
+//     img.onerror = () => reject("❌ Failed to load image");
+//   });
+// }
+
+// document.getElementById("loadImage").addEventListener("click", async () => {
+//   const container = document.getElementById("container");
+//   container.innerHTML = "⏳ Loading image...";
+
+//   try {
+//     const img = await loadImage("https://picsum.photos/300");
+//     container.innerHTML = "";
+//     container.appendChild(img);
+//   } catch (err) {
+//     container.textContent = err;
+//   }
+// });
