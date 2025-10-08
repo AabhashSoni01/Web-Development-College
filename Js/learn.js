@@ -382,3 +382,29 @@
 //     container.textContent = err;
 //   }
 // });
+
+/* Sequential DOM Updates with Promises - Uses async/await for smooth, readable DOM changes */
+
+// function delay(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+
+// async function changeText() {
+//   const t = document.getElementById("text");
+
+//   t.textContent = "Loading...";
+//   await delay(1000);
+
+//   t.textContent = "Step 1 complete 🟩";
+//   await delay(1000);
+
+//   t.textContent = "Step 2 complete 🟨";
+//   await delay(1000);
+
+//   t.textContent = "Step 3 complete 🟦";
+//   await delay(1000);
+
+//   t.textContent = "All done 🎉";
+// }
+
+// changeText();
